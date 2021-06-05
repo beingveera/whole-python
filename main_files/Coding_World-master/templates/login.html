@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=1400"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+ 
+    
+  </head>
+  <body style="overflow-x: hidden;">
+    <form method="POST" action="/home/"> {% csrf_token %}
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+      var viewMode =getCookie("view-mode");
+      if(viewMode == "desktop"){
+        viewport.setAttribute('content','width=1400'); 
+      }
+      else if (viewMode == "mobile"){
+        viewport.setAttribute('content','width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no')
+      }
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#">Code World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/course/">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Languages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="python/">Python</a>
+                <a class="dropdown-item" href="cplus/">C++</a>
+                <a class="dropdown-item" href="java/">Java</a>
+                <a class="dropdown-item" href="php/">Php</a>
+                <a class="dropdown-item" href="c/">C Languages</a>
+                
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="">Close</a>
+              </div>
+            </li>
+         
+          </ul>
+          <div class="form-inline my-2 my-lg-0" class="GET" action="/search/">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 mx-2" type="submit">Search</button>
+           
+           
+          </div>
+        </div>
+      </nav>
+
+      <div class="my-2"><h3 style="text-align: center;">Login</h3>
+      </div>
+
+<div class="row">
+    <div class="col-3">
+
+    </div>
+    <div class="col-8 my-2">
+
+       
+      <div class="jumbotron jumbotron-fluid" style="text-align: center; height: 350px; width: 70%; border-radius: 10px;">
+     
+        <div class="container">
+            <div class="form-inline" >
+                <div class="col-12">
+                <input class="form-control mr-sm-2" type="text" placeholder="OTP Varification" aria-label="Search" style="width:50%" required name="otp"><br><br>
+                 <button class="btn btn-outline-danger my-2 my-sm-0 mx-2" type="submit" style="width: 20%; opacity: 1;">Submit</button>
+
+                <a href="/Signup/" class="btn btn-outline-danger  my-2 my-sm-0 mx-2" style="width: 20%;">Sign In</a><br><br>
+           
+               
+            </div>
+            <div class="mx-3 my-3">
+            <button class="btn btn-success " type="submit" style="width: 100%; opacity: 1;">Login With Google</button><hr>
+            </div>
+            
+            <div class="mx-5">
+            <button class="btn btn-primary" type="submit" style="width: 100%; opacity: 1;">Login With Linkdlin </button><hr>
+            </div> 
+
+            <div class="mx-3">
+                <button class="btn btn-dark" type="submit" style="width: 100%; opacity: 1;">Login With Github </button><hr>
+            </div> 
+                
+          </div>
+              
+              
+            </div>
+        
+            </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+     
+
+      <div class="col-1">
+
+      </div>
+
+      <div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9655830461045889" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color:transparent; height: 100px;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:839px;background-color:transparent;"><ins id="aswift_1_anchor" style="display: block; border: none; height: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 839px; background-color: transparent; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:839px;height:280px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="839" height="280" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9655830461045889&amp;output=html&amp;h=280&amp;adk=158649153&amp;adf=2321957319&amp;w=839&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1598160111&amp;rafmt=1&amp;to=qs&amp;pwprc=1969416838&amp;psa=1&amp;guci=2.2.0.0.2.2.0.0&amp;format=839x280&amp;url=https%3A%2F%2Fwww.codewithharry.com%2F&amp;flash=0&amp;fwr=0&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;dt=1598160111226&amp;bpp=24&amp;bdt=381&amp;idt=415&amp;shv=r20200818&amp;cbv=r20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Dcfc7b07f67269f15%3AT%3D1597482170%3AS%3DALNI_MZGteMwd3OW8Jsu1RSkFTQRJmKXOA&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=155010320600&amp;frm=20&amp;pv=1&amp;ga_vid=2073954665.1597482146&amp;ga_sid=1598160111&amp;ga_hid=1589720143&amp;ga_fc=0&amp;iag=0&amp;icsg=2156560384&amp;dssz=20&amp;mdo=0&amp;mso=0&amp;u_tz=330&amp;u_his=2&amp;u_java=0&amp;u_h=667&amp;u_w=903&amp;u_ah=667&amp;u_aw=903&amp;u_cd=24&amp;u_nplug=0&amp;u_nmime=0&amp;adx=32&amp;ady=142&amp;biw=903&amp;bih=667&amp;scr_x=0&amp;scr_y=0&amp;eid=21066532%2C21066973&amp;oid=3&amp;pvsid=3846069072146716&amp;pem=213&amp;ref=https%3A%2F%2Fwww.codewithharry.com%2F&amp;rx=0&amp;eae=0&amp;fc=1924&amp;brdim=0%2C0%2C0%2C0%2C903%2C0%2C903%2C667%2C903%2C667&amp;vis=1&amp;rsz=%7C%7CEe%7C&amp;abl=CS&amp;pfx=0&amp;fu=8320&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;xpc=m9j8DIkumU&amp;p=https%3A//www.codewithharry.com&amp;dtd=431" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="COO1nq_KsOsCFU8Wcgod3-4E_Q" data-load-complete="true"></iframe></ins></ins></ins></div>
+
+
+
+
+
+
+
+
+    </form>
+  </body>
+
+
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=1400"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+ 
+    
+  </head>
+  <body style="overflow: hidden;">
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+      var viewMode =getCookie("view-mode");
+      if(viewMode == "desktop"){
+        viewport.setAttribute('content','width=1400'); 
+      }
+      else if (viewMode == "mobile"){
+        viewport.setAttribute('content','width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no')
+      }
+    </script>
+<form method="POST" action="/Signup/">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Code World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/course/">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Languages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="python/">Python</a>
+                <a class="dropdown-item" href="cplus/">C++</a>
+                <a class="dropdown-item" href="java/">Java</a>
+                <a class="dropdown-item" href="php/">Php</a>
+                <a class="dropdown-item" href="c/">C Languages</a>
+                
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="">Close</a>
+              </div>
+            </li>
+         
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 mx-2" type="submit">Search</button>
+           
+         </div>
+        </div>
+      </nav>
+    
+      <div class="my-2"><h3 style="text-align: center;">Sign Up</h3>
+      </div>
+
+<div class="row">
+    <div class="col-3">
+
+    </div>
+    <div class="col-8 my-2">
+
+       
+      <div class="jumbotron jumbotron-fluid" style="text-align: center; height: 560px; width: 70%; border-radius: 10px;">
+     
+        <div class="container">
+          
+            <div style="text-align:center;" class="form-inline">
+                <div class="col-12">{% csrf_token %}
+                 <input class="form-control mr-sm-2" type="search" placeholder="First Name" aria-label="Search" style="width:50%" required name="first"><br><br>
+                <input class="form-control mr-sm-2" type="search" placeholder="Last Name" aria-label="Search" style="width:50%" required name="second"><br><br>
+                <input class="form-control mr-sm-2" type="date" placeholder="Date of Birth" aria-label="Search" style="width:50%" required name="birth"><br><br>
+                <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Search" style="width:50%" required name="mail"><br><br>
+                <input class="form-control mr-sm-2" type="password" placeholder="Password"  style="width:50%" required id=pass name="pass"><br><br>
+                <input class="form-control mr-sm-2" type="password" placeholder="Conferm Password" style="width:50%" requireds id=cpass name="cpass"><br><br>
+                
+                <button class="btn btn-outline-danger my-2 my-sm-0 mx-2" type="submit" style="width: 20%; opacity: 1;">Submit</button>
+               <a href="/login/" class="btn btn-outline-danger" style="width: 20%; opacity: 1;">Varification</a>
+            </div>
+  
+                
+                
+            </div>
+              
+            </div>
+        
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+     
+
+      <div class="col-1">
+
+      </div>
+    </form>
+  </body>
+ 
+<script>
+    
+    function ok(){  
+    var v1=document.getElementById('pass').value
+    var v2=document.getElementById('cpass').value
+    if(v1 !=v2){
+      alert("password are not same...");
+    }
+    else{
+        alert("password are same....");
+    }
+    } 
+
+
+</script>
+
+
+
+
+</html>

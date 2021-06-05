@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=1400"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+ 
+  </head>
+  <body >
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      var viewMode =getCookie("view-mode");
+      if(viewMode == "desktop"){
+        viewport.setAttribute('content','width=1100'); 
+      }
+      else if (viewMode == "mobile"){
+        viewport.setAttribute('content','width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no')
+      }
+    </script>
+     
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">Code World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home/">Home </a>
+            </li>
+            <li class="nav-item actives">
+              <a class="nav-link" href="/course/">Course</a>
+            </li>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/c/" >C </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cplus/" >C++</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="/java/">Java</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/python/">Python</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/machine/">ML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sciense/">Data Sciense</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/kotlin/">Kotlin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/">Html</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/css/">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/js/">JavaScript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/bootstrap/">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/php/">PHP</a>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="GET">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" id="search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0 mx-2" type="submit" onclick="ok()">Search</button>
+
+          </form>
+        </div>
+      </nav>
+
+      <script>
+      function ok(){
+
+       let z=document.body.textContent
+       
+        let x =document.getElementById('search').innerText
+        val=x.value
+        alert(x)
+       
+      } 
+      </script>
+       
+   
+      <div class="mx-3 my-2">
+         <a class="btn btn-secondary" data-toggle="collapse" href="#history" role="button" aria-expanded="false" aria-controls="history">Python History</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#setup" role="button" aria-expanded="false" aria-controls="setup">Python Setup </a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#syntax" role="button" aria-expanded="false" aria-controls="syntax">Basic Syntax</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#variable" role="button" aria-expanded="false" aria-controls="variable">Variable Type</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#operator" role="button" aria-expanded="false" aria-controls="operator">Basic Operator</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#decision" role="button" aria-expanded="false" aria-controls="decision">Decision Making</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#loops" role="button" aria-expanded="false" aria-controls="loops">Loops in python</a>
+     <a class="btn btn-secondary" data-toggle="collapse" href="#numbers" role="button" aria-expanded="false" aria-controls="numbers">Numbers</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#list" role="button" aria-expanded="false" aria-controls="list">list</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#tuples" role="button" aria-expanded="false" aria-controls="tuples">Tuples</a>
+         <a class="btn btn-secondary" data-toggle="collapse" href="#dictonary" role="button" aria-expanded="false" aria-controls="dictonary">Dictonary</a>
+        <a class="btn btn-secondary" data-toggle="collapse" href="#functions" role="button" aria-expanded="false" aria-controls="functions">Functions</a>
+          <a class="btn btn-secondary" data-toggle="collapse" href="#files" role="button" aria-expanded="false" aria-controls="files">Files I/O</a>
+
+
+
+          <div  style="margin: 50px;">
+            <hr>
+          <h4 style="text-align: center;">Advertisements</h4>
+    
+             
+          
+         
+             <div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-9655830461045889" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 280px;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:839px;background-color:transparent;"><ins id="aswift_1_anchor" style="display: block; border: none; height: 280px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 839px; background-color: transparent; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:839px;height:280px;" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="839" height="280" frameborder="0" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-9655830461045889&amp;output=html&amp;h=280&amp;adk=158649153&amp;adf=2321957319&amp;w=839&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1598160111&amp;rafmt=1&amp;to=qs&amp;pwprc=1969416838&amp;psa=1&amp;guci=2.2.0.0.2.2.0.0&amp;format=839x280&amp;url=https%3A%2F%2Fwww.codewithharry.com%2F&amp;flash=0&amp;fwr=0&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;dt=1598160111226&amp;bpp=24&amp;bdt=381&amp;idt=415&amp;shv=r20200818&amp;cbv=r20190131&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Dcfc7b07f67269f15%3AT%3D1597482170%3AS%3DALNI_MZGteMwd3OW8Jsu1RSkFTQRJmKXOA&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=155010320600&amp;frm=20&amp;pv=1&amp;ga_vid=2073954665.1597482146&amp;ga_sid=1598160111&amp;ga_hid=1589720143&amp;ga_fc=0&amp;iag=0&amp;icsg=2156560384&amp;dssz=20&amp;mdo=0&amp;mso=0&amp;u_tz=330&amp;u_his=2&amp;u_java=0&amp;u_h=667&amp;u_w=903&amp;u_ah=667&amp;u_aw=903&amp;u_cd=24&amp;u_nplug=0&amp;u_nmime=0&amp;adx=32&amp;ady=142&amp;biw=903&amp;bih=667&amp;scr_x=0&amp;scr_y=0&amp;eid=21066532%2C21066973&amp;oid=3&amp;pvsid=3846069072146716&amp;pem=213&amp;ref=https%3A%2F%2Fwww.codewithharry.com%2F&amp;rx=0&amp;eae=0&amp;fc=1924&amp;brdim=0%2C0%2C0%2C0%2C903%2C0%2C903%2C667%2C903%2C667&amp;vis=1&amp;rsz=%7C%7CEe%7C&amp;abl=CS&amp;pfx=0&amp;fu=8320&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;xpc=m9j8DIkumU&amp;p=https%3A//www.codewithharry.com&amp;dtd=431" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="COO1nq_KsOsCFU8Wcgod3-4E_Q" data-load-complete="true"></iframe></ins></ins></ins></div>
+    
+            </div>
+            <hr></div>
+
+
+
+
+ 
+           
+
+
+      
+
+
+      <div class="col">
+
+        <div class="collapse multi-collapse" id="history">
+          <div class="card card-body">
+            
+          
+          
+            <p style="margin: 10px;"><h3 class="container mx-4 mr-sm-2">History of Python :−</h3></p>
+            <div class='row'>
+            <div class="container col-6"  >
+              
+                   <p>The programming language Python was conceived in the late<b> 1980s </b>, and <b style="color: black;">its implementation was started in December 1989 by Guido van Rossum at CWI in the Netherlands</b> 
+               as a secondaryor to ABC capable of exception handling and interfacing with the Amoeba operating system. Van Rossum is Python's principal author, and his 
+               continuing central role in deciding the direction of Python is reflected in the title given to him by the Python community, Benevolent Dictator for Life 
+               (BDFL). (However, van Rossum stepped down as leader on July 12, 2018.) Python was named for the BBC TV show Monty Python's Flying Circus.<br><br></p>
+        
+               <p style="margin: 10px;"><h3 class="container  mx-1">Python Versions :−</h3></p>
+        
+             <p> Python 2.0 was released on October 16, 2000, with many major new features, including a cycle-detecting garbage collector (in addition to reference counting) 
+               for memory management and support for Unicode. However, the most important change was to the development process itself, with a shift to a more transparent and
+                community-backed process.
+        
+              <p>
+              Python 3.0, a major, backwards-incompatible release, was released on December 3, 2008 after a long period of testing. Many of its major features have also been 
+              backported to the backwards-compatible, while by now unsupported, Python 2.6 and 2.7.</p>
+          
+             
+              
+            </div>
+             <div class="col-4">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.4uExqHWbSVp0GlRzAvl6OwAAAA&pid=Api&P=0&w=300&h=300" style="width: 50%; height: 300px;">
+            <h4 class="mx-4"><br>
+              <p>  Guido van Rossum </p>    
+          </h4>
+            
+            
+               
+        
+          </div>
+         
+            </div>
+        
+        
+        
+            <p style="margin: 10px;"><h3 class="container mx-4 ">Why to Learn Python ? :−</h3></p>
+            <div class="row">
+            <div class="container col-10">
+              <p>
+        
+                Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable.
+                 It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
+        <br>
+        <ul>
+              Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. 
+              I will list down some of the key advantages of learning Python :−<br><br>
+        
+            <li><b> Python is Interpreted</b>  − Python is processed at runtime by the interpreter. You do not need to compile your program before executing it.
+             This is similar to PERL and PHP.</li>
+        
+            <li><b>Python is Interactive</b> − You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</li>
+        
+            <li><b>Python is Object-Oriented</b> − Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</li>
+        
+          <li><b>Python is a Beginner's Language</b> − Python is a great language for the beginner-level programmers and supports the development of a wide range of 
+            applications from simple text processing to WWW browsers to games.</li>
+        </ul>     
+        </p>
+            </div>
+            </div>
+        
+        
+        
+            <p style="margin: 10px;"><h3 class="container mx-4 ">Characteristics of Python :−</h3></p>
+            <div class="row">
+            <div class="container col-10">
+              <p>
+          <ul>
+              <b>  Following are important characteristics of Python Programming :−</b><br><br>
+        
+             <li>It supports functional and structured programming methods as well as OOP.</li>
+        
+            <li>It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+        
+            <li>It provides very high-level dynamic data types and supports dynamic type checking.</li>
+        
+            <li>It supports automatic garbage collection.</li>
+        
+            <li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+            
+          </ul>
+              </p>
+            </div>
+            </div>
+        
+        
+        
+            
+            <p style="margin: 10px;"><h3 class="container mx-4 ">Application of  Python :−</h3></p>
+            <div class="row">
+            <div class="container col-10">
+              <p> 
+          <ul>
+              <b>As mentioned before, Python is one of the most widely used language over the web. I'm going to list few of them here :−</b><br><br>
+        
+             <li><b>Easy-to-learn −</b> Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.</li>
+        
+            <li><b>Easy-to-read −</b> Python code is more clearly defined and visible to the eyes.</li>
+        
+            <li><b>Easy-to-maintain − </b>Python's source code is fairly easy-to-maintain.</li>
+        
+            <li><b>A broad standard library − </b>Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.</li>
+        
+            <li><b>Interactive Mode − </b>Python has support for an interactive mode which allows interactive testing and debugging of snippets of code.</li>
+        
+            
+            <li><b>Portable −</b> Python can run on a wide variety of hardware platforms and has the same interface on all platforms.</li>
+        
+            <li><b>Extendable − </b>You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.
+            </li>
+        
+            <li><b>Databases − </b>Python provides interfaces to all major commercial databases.</li>
+        
+            <li><b>GUI Programming −</b> Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, 
+              Macintosh, and the X Window system of Unix.
+              </li>
+        
+              <li><b>
+        Scalable − </b>Python provides a better structure and support for large programs than shell scripting.
+        
+              </li>
+            
+          </ul>
+              </p>
+            </div>
+            </div>
+        
+        
+           
+          </div>
+        </div> 
+      </div>
+
+
+
+      <div class="col">
+        <div class="collapse multi-collapse" id="setup">
+          <div class="card card-body">
+            
+          
+          
+  <p style="margin: 10px;"><h3 class="container mx-4 ">Getting Python:−</h3></p>
+  <div class="row">
+  <div class="container col-10">
+    <p>
+      The python is a cross platform working language , that is can run in many Operating System like <b>windows </b>,<b> Linux</b> , <b>Unix</b> and <b>Mac</b> .
+
+      The most up-to-date and current source code, binaries, documentation, news, etc., is available on the official website of Python <a href="https://www.python.org/">Download Python Setup </a>.
+
+      You can  <a href=" https://www.python.org/doc/">download Python documentation</a>. The documentation is available in HTML, PDF, and PostScript formats.
+
+</p>
+  </div>
+  </div>
+
+  
+  <p style="margin: 10px;"><h3 class="container mx-4 ">Installing Of Python :−</h3></p>
+  <div class="row">
+  <div class="container col-10">
+    <p>
+      Python distribution is available for a wide variety of platforms. You need to download only the binary code applicable for 
+          your platform and install Python.<br>
+          If the binary code for your platform is not available, you need a C compiler to compile the source code manually. 
+          Compiling the source code offers more flexibility in terms of choice of features that you require in your installation.
+</p>
+<p>
+  Here is a quick overview of installing Python on various platforms −
+
+</p>
+<p>
+  <ul>
+  <b>Unix and Linux Installation :-</b>
+  <li>Open a Web browser and go to<a href= "https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</li>
+  <li>Follow the link to download zipped source code available for Unix/Linux.</li>
+  <li>Download and extract files.</li>
+  <li>Editing the Modules/Setup file if you want to customize some options.</li>
+  <li>run ./configure script</li>
+  <li>make</li>
+  <li>make install</li>
+
+
+</ul>
+  
+</p>
+
+<p>
+  <ul>
+  <b>Windows Installation :-</b>
+  <li>Open a Web browser and go to<a href= "https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</li>
+  <li>Follow the link for the Windows installer python-XYZ.msi file where XYZ is the version you need to install.</li>
+  <li>To use this installer python-XYZ.msi, the Windows system must support Microsoft Installer 2.0. Save the installer
+       file to your local machine and then run it to find out if your machine supports MSI.</li>
+  <li>Run the downloaded file. This brings up the Python install wizard, which is really easy to use. Just accept the default 
+      settings, wait until the install is finished, and you are done.
+
+  </li>
+</ul>   
+</p>
+
+<p>
+  <ul>
+  <b>MAC   Installation :-</b>
+  <li>Recent Macs come with Python installed, but it may be several years out of date. See <a href="http://www.python.org/download/mac/">http://www.python.org/download/mac/</a> for instructions 
+      on getting the current version along with extra tools to support development on the Mac. For older Mac OS's before Mac OS X 10.3 
+      (released in 2003), MacPython is available.</a>.</li>
+  <li>Jack Jansen maintains it and you can have full access to the entire documentation at his website − <a href ="http://www.cwi.nl/~jack/macpython.html">http://www.cwi.nl/~jack/macpython.html</a>. 
+      You can find complete installation details for Mac OS installation.</li>
+  
+</ul>   
+</p>
+
+
+</div>
+</div>
+
+
+
+<p style="margin: 10px;"><h3 class="container mx-4 ">Setting Of Path :−</h3></p>
+  <div class="row">
+  <div class="container col-10">
+<p>
+  <ul>
+  <li>Programs and other executable files can be in many directories, so operating systems provide a search path that lists the directories 
+      that the OS searches for executables.</li>
+  <li>The path is stored in an environment variable, which is a named string maintained by the operating system. This variable 
+      contains information available to the command shell and other programs.
+  </li>
+  
+</ul>   
+</p>
+
+<p>
+  <b>Setting of Path at Unix / Linux :-</b>
+  <ul>
+      <p>To add the Python directory to the path for a particular session in Unix −</p>
+  <li><b>In the csh shell − </b>type setenv PATH <b>"$PATH:/usr/local/bin/python"</b> and press Enter</li>
+  <li><b>In the bash shell (Linux) − </b>type export PATH=<b>"$PATH:/usr/local/bin/python"</b> and press Enter.</li>
+  <li><b>In the sh or ksh shell − </b>type PATH=<b>"$PATH:/usr/local/bin/python" </b>and press Enter.</li>
+  <li><b>Note −</b> /usr/local/bin/python is the path of the Python directory</li>
+  
+</ul>   
+</p>
+
+
+
+<p>
+  <b>Setting path at Windows :-</b>
+  <ul>
+      <p>To add the Python directory to the path for a particular session in Windows −</p>
+  <li><b>At the command prompt −</b> type path %path%;C:\Python and press Enter.</li>
+  <li><b>Note − </b>C:\Python is the path of the Python directory</li>
+  
+</ul>   
+</p>
+
+  </div>
+  </div>
+
+
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+<div class="col">
+  <div class="collapse multi-collapse" id="syntax">
+    <div class="card card-body">
+
+
+
+  <div class="container col-12 "><h4>First Program in Python:−</h4></div>
+      <div class="row">
+      <div class="container col-10">   
+        <p>
+          Let us execute our first  programs in Python Programming .
+        </p>
+       <div class="card text-center">
+        <div class="card-header">
+          First Program in Python:−
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Lets print the "Hellow World" in python</h5>
+          <div class="container-fluid">
+          <p class="card-text">
+             <div class="container" style=" text-align: center;">
+            <h5><b style="color: blue;">Print</b>(<b style="color:lime;">"Hellow World"</b>)</h5>
+           </div></p></div>
+
+           <a class="btn btn-primary" data-toggle="collapse" href="#output" role="button" aria-expanded="false" aria-controls="output">OutPut</a>
+        </div>
+        <div class="card-footer text-muted">
+         <div class="col">
+        <div class="collapse multi-collapse" id="output">
+          <div class="card card-body">
+          <h6>  Hellow World</h6>
+            </div></div></div>
+        </div>
+      </div>
+      </div>
+      </div>
+         
+      
+       <br>
+
+       <p>
+        <div class="container col-11"><b>Basic Inbuild function :-</b></div><br>
+         <ul>
+
+        <div class="container col-11">
+
+        <li>  <b>Print Function :-</b></li>
+        <p><b style="color:blue">Print</b> Function is a python inbuild function , that function is print the all things which are written <b>" "  ,  ' ' ,</b> mainly 
+        the print function takes only a one arguments, but a one more parameter is passed in print function <b style="color:orangered">end=""</b> that function is used
+      for output formating.    </p>
+
+    
+    <div class="card text-center">
+      <div class="card-header">
+     Print Function:-
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Let`s learn how to use print function</h5>
+        <div class="container-fluid">
+        <p class="card-text">
+           
+      <div class="container" style=" text-align:center ;">
+        <h5>  <b style="color: blue;">Print</b>(<b style="color:lime;">"Welcome to Code World"</b>)</h5>
+    </div>
+
+         <a class="btn btn-primary my-4" data-toggle="collapse" href="#output1" role="button" aria-expanded="false" aria-controls="output1" >OutPut</a><br>
+      </div>
+      <div class="card-footer text-muted">
+       <div class="col">
+      <div class="collapse multi-collapse" id="output1">
+        <div class="card card-body">
+        <h6> Welcome to Code World</h6>
+          </div></div></div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+       
+   
+
+
+      
+<br>
+
+    <div class="container col-11">
+      <li>  <b>Input Function :-</b></li>
+      <p><b style="color:blue">Input</b> Function is a python inbuild function , That function used for take a user input from key board , in the input function we can 
+        take user input in differnt types of datatypes (Int, Str, Float, Double) .  
+         </p>          
+      <div class="row">
+      <div class="container col-5" style=" text-align:left ;">            
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-header">
+      Input Function:-
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Let`s learn how to use Input function</h5>
+          <div class="container-fluid">
+          <p class="card-text">
+             
+        <div class="container" style=" text-align:c:inheritenter ;">
+          <div class="container" style=" text-align:center;">
+            <h5> nm =<b style="color: blue;">input</b>(<b style="color:lime;">"Enter your Name : "</b>)</h5>
+            <h5> val =<b style="color:chocolate ;">int</b>(<b style="color: blue;">input</b>(<b style="color:lime;">"Enter a Number : "</b>))</h5>
+            <h5> float_value =<b style="color:chocolate ;">float</b>(<b style="color: blue;">input</b>(<b style="color:lime;">"Enter a Number : "</b>))</h5>
+         
+          </div>
+      </div>
+
+           <a class="btn btn-primary my-4" data-toggle="collapse" href="#output2" role="button" aria-expanded="false" aria-controls="output2" >OutPut</a><br>
+        </div>
+        <div class="card-footer text-muted">
+         <div class="col">
+        <div class="collapse multi-collapse" id="output2">
+          <div class="card card-body">
+            <h6>Enter your Name: India</h6>
+            <h6>The value of val : 100</h6>
+            <h6>The value of float_value : 657.67</h6>
+         
+
+            </div></div></div>
+        </div>
+      </div>
+      </div></div>
+
+
+
+
+
+
+<br><br>
+      <div class="container col-12 mx-0 "><h4>Python Identifiers :−</h4></div><br>
+
+      <div class="container col-10">
+        <div class="col-11">
+        <p>
+          A Python identifier is a name used to identify a variable, function, class, module or other object. <b>An identifier starts with a letter A to Z or a to 
+          or an underscore (_) </b>followed by zero or more letters, underscores and digits (0 to 9).<br>
+
+          Python does not allow punctuation characters such as @, $, and % within identifiers. Python is a case sensitive programming language. Thus,
+           <b>Manpower</b> and <b>manpower</b> are two different identifiers in Python.
+        </p>
+        <ul>
+          Here are naming conventions for Python identifiers :−<br><br>
+       
+        <li>
+          Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
+        </li>
+        <li>Starting an identifier with a single leading underscore indicates that the identifier is private.</li>
+        <li>
+          Starting an identifier with two leading underscores indicates a strongly private identifier.
+        </li>
+        <li>
+          If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.
+
+        </li>
+      </ul>
+      
+        </div>
+      </div>
+      <br><br>
+      
+
+
+
+    <div class="container col-12 "><h4> Comments :−</h4></div>
+            <div class="container col-10">
+        <div class="col-12">
+          <h6>In python we can comments single lines or multi lines,  single line comments are done by using <b>#</b> </h6><br>
+          <div class="card text-center">
+            <div class="card-header">
+          Comments in python:-
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Let`s learn about the comments</h5>
+              <div class="container-fluid">
+              <p class="card-text">
+                 
+              <div class="container" style=" text-align:left ;">
+                <h6>Single Line Comments :-</h6></div>
+
+                <div class="container" style=" text-align:center;">
+                  <h5 style="color:orangered;"><b style="color: green;">#</b> That is a single line comment...!!!</h5></div><br>
+                 
+                  <div class="container" style=" text-align:left ;">
+                    <h6>Multi Lines Comments :-</h6></div>
+  
+                    <div class="container" style=" text-align:center;">
+                      <h5 style="color:orangered;"><b style="color: green;">'''</b> That is a Multi line comment.<br> website is created in Django<br>with the using of 
+                      bootstrap4<b style="color:green;">'''</b></h5></div>
+                     
+                   
+              </div>
+          </div>
+    <div>
+               <a class="btn btn-primary my-3" data-toggle="collapse" href="#output2" role="button" aria-expanded="false" aria-controls="output2" >OutPut</a><br>
+            </div>
+          </div>
+            <div class="card-footer text-muted">
+             <div class="col">
+            <div class="collapse multi-collapse" id="output2">
+              <div class="card card-body">
+                <h6 style="color: green;">The compiler can`t read the commented lines . That are Just Used for Create the Userfriendly Program. </h6>
+                
+                
+             
+  
+                </div></div></div>
+            </div>
+          </div>
+          </div><br><br>
+           
+
+
+
+
+           <div>
+            <h4>Reserved Words:-</h4><br>
+            <div class="container col-9">
+            <h6>The following list shows the Python keywords. These are reserved words and you cannot use 
+              them as constant or variable or any other identifier names. All the Python keywords contain lowercase letters only.</h6><br>
+
+              <table class="table table-bordered" style="text-align:center;">
+                <tbody><tr>
+                <td>and</td>
+                <td>exec</td>
+                <td>not</td>
+                </tr>
+                <tr>
+                <td>assert</td>
+                <td>finally</td>
+                <td>or</td>
+                </tr>
+                <tr>
+                <td>break</td>
+                <td>for</td>
+                <td>pass</td>
+                </tr>
+                <tr>
+                <td>class</td>
+                <td>from</td>
+                <td>print</td>
+                </tr>
+                <tr>
+                <td>continue</td>
+                <td>global</td>
+                <td>raise</td>
+                </tr>
+                <tr>
+                <td>def</td>
+                <td>if</td>
+                <td>return</td>
+                </tr>
+                <tr>
+                <td>del</td>
+                <td>import</td>
+                <td>try</td>
+                </tr>
+                <tr>
+                <td>elif</td>
+                <td>in</td>
+                <td>while</td>
+                </tr>
+                <tr>
+                <td>else</td>
+                <td>is</td>
+                <td>with </td>
+                </tr>
+                <tr>
+                <td>except</td>
+                <td>lambda</td>
+                <td>yield</td>
+                </tr>
+                </tbody></table>
+
+
+
+              </div></div>
+           
+    </ul></p></div></div></div>
+
+
+
+
+
+
+
+              <div class="col-12">
+                <div class="collapse multi-collapse" id="variable">
+                  <div class="card card-body">
+                    <p>
+                  dcccdcdcdcdcddcdcdc
+                    </p>
+                  
+                
+                </div></div></div>
+
+
+
+
+                <div class="col-12">
+                  <div class="collapse multi-collapse" id="operator">
+                    <div class="card card-body">
+                      <p>
+                    dcccdcdcdcdcddcdcdc
+                      </p>
+                    
+                  
+                  </div></div></div>
+
+
+
+
+                  <div class="col-12">
+                      <div class="collapse multi-collapse" id="decision">
+                        <div class="card card-body">
+                          <p>
+                        dcccdcdcdcdcddcdcdc
+                          </p>
+                        
+                      
+                      </div></div></div>
+
+
+
+
+
+                      <div class="col-12">
+                          <div class="collapse multi-collapse" id="loops">
+                            <div class="card card-body">
+                              <p>
+                            dcccdcdcdcdcddcdcdc
+                              </p>
+                            
+                          
+                          </div></div></div>
+
+
+
+
+
+                          <div class="col-12">
+                              <div class="collapse multi-collapse" id="numbers">
+                                <div class="card card-body">
+                                  <p>
+                                dcccdcdcdcdcddcdcdc
+                                  </p>
+                                
+                              
+                              </div></div></div>
+
+                              
+
+
+
+                              <div class="col-12">
+                                  <div class="collapse multi-collapse" id="list">
+                                    <div class="card card-body">
+                                      <p>
+                                    dcccdcdcdcdcddcdcdc
+                                      </p>
+                                    
+                                  
+                                  </div></div></div>
+
+                                  
+
+
+
+                                  <div class="col-12">
+                                      <div class="collapse multi-collapse" id="tuples">
+                                        <div class="card card-body">
+                                          <p>
+                                        dcccdcdcdcdcddcdcdc
+                                          </p>
+                                        
+                                      
+                                      </div></div></div>
+
+                                      
+
+
+
+
+                                      <div class="col-12">
+                                          <div class="collapse multi-collapse" id="dictonary">
+                                            <div class="card card-body">
+                                              <p>
+                                            dcccdcdcdcdcddcdcdc
+                                              </p>
+                                            
+                                          
+                                          </div></div></div>
+
+                                          
+
+
+
+                                          <div class="col-12">
+                                              <div class="collapse multi-collapse" id="functions">
+                                                <div class="card card-body">
+                                                  <p>
+                                                dcccdcdcdcdcddcdcdc
+                                                  </p>
+                                                
+                                              
+                                              </div></div></div>
+
+                                              
+
+
+
+
+                                              <div class="col-12">
+                                                  <div class="collapse multi-collapse" id="files">
+                                                    <div class="card card-body">
+                                                      <p>
+                                                    dcccdcdcdcdcddcdcdc
+                                                      </p>
+                                                    
+                                                  
+                                                  </div></div></div>
+
+
+                                                  <hr>
+                                                  <p style="margin: 10px;"><h3 class="container mx-4 ">Oops In Swift</h3></p>
+                                                 <diV class="mx-3 my-2"> 
+                                                  <hr>  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Consepts of Oops</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Classes</a>
+                                                    <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Constructor</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Inharitanse</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Polymorphism</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Oops Keywords</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">This Pointer</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Overloading</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Templates</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Inline Function</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Virtual Function</a>
+                                                  <a class="btn btn-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">NameSpaces</a>
+                                                </diV>
+                                          
+                                               
+
+
+
+                
+
+                                                 
+        
+                                                <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="height: 90px; width:100%">
+
+                                                  <div style="text-align: center;">
+                                                    <p class="mb-0 text-center" style="color: white;">&copy; 2001-2025 CodingWorld.com</p>
+                                                    <p class="mb-0 text-center" style="color: white;">
+                                                      Follow Us On<br> 
+                                                     <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScjcPGbp1efbFP79tFAuvepFdwQI9hnPJ9Nw&usqp=CAU" style="width: 2%; height: 30px;"></img></a>
+                                                     <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="data:image/png;base64,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" style="width: 2%; height: 30px;"></img></a>
+                                                     <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="data:image/png;base64,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" style="width: 2%; height: 30px;"></img></a>
+                                                     <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="data:image/png;base64,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" style="width: 2%; height: 30px;"></img></a>
+                                                    
+                                                    </p>  
+                                                    </div>
+                                                
+                                                
+                                                    <div >
+                                                      <form class="form-inline my-2 my-lg-0" >
+                                                        <input class="form-control mr-sm-2" type="text" placeholder="E-mail" id="searchbar">
+                                                        <button class="btn btn-outline-warning my-2 my-sm-0 mx-2" type="submit">Contact Us</button>
+                                                        
+                                                       
+                                                      </div>
+                                                
+                                                </nav>  
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
+  <script>
+      window.onload = function () {
+          console.log("Loaded")
+          var typed = new Typed('#typed', {
+              strings: ["Welcome to Coding World", "Learn Python", "Web development", "Data Science", "Machine Learning"],
+              backSpeed: 20,
+              smartBackspace: true,
+              backDelay: 1200,
+              startDelay: 1000,
+              typeSpeed: 25,
+              loop: true,
+          });
+      };
+  </script>
+
+
+
+
+
+
+
+</html>

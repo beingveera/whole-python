@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <title>Code Editor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=1400">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        
+           
+        
+            <!-- Bootstrap CSS CDN -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+            <!-- Our Custom CSS -->
+            <link rel="stylesheet" href="style.css">
+        
+            <!-- Font Awesome JS -->
+            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+         
+
+
+<style>
+
+body{
+    text-align: center;
+  
+
+}
+
+
+.html{
+    border-color: black;
+    width: 32%;
+    float: top;
+    min-height: 250px;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    background:gainsboro;
+    border-color:lightgrey;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    border-width: 5px;
+
+    
+}
+
+
+
+.css{
+    border-color: black;
+    width: 32%;
+    float: top;
+    min-height: 250px;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    background:gainsboro;
+    border-color:lightgrey;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    border-width: 5px;
+
+    
+}
+
+.js{
+    border-color: black;
+    width: 32%;
+    float: top;
+    min-height: 250px;
+    overflow: scroll;
+    margin: auto;
+    display: inline-block;
+    background:gainsboro;
+    border-color:lightgrey;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    border-width: 5px;
+
+}
+
+iframe{
+    border-color:rgb(0, 38, 255);
+    bottom: 0;
+    position: relative;
+    width: 96%;
+    height: 400px;
+    border-radius: 10px;
+    border-width:7px;
+}
+
+h3{
+    border-color: black;
+    float: top;
+    display: inline-block;
+    background:yellow;
+    
+    font-family: 'Courier New', Courier, monospace;
+   
+
+}
+
+button{
+
+    background: rgb(0, 247, 255);
+    width: 5%;
+    height: 30px;
+    border-radius:4px;
+    
+
+}
+
+
+</style>
+
+
+
+        <script>
+            var viewMode =getCookie("view-mode");
+            if(viewMode == "desktop"){
+              viewport.setAttribute('content','width=1400'); 
+            }
+            else if (viewMode == "mobile"){
+              viewport.setAttribute('content','width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no')
+            }
+          </script>
+
+
+
+
+
+
+      
+    </head>
+
+    <body>
+        
+       <h3 style="background-color: orangered; height: 25px; width: 50%; border-radius: 10px;">HTML Editor</h3><hr>
+        <textarea id="html" placeholder="HTML" class="html"></textarea>
+
+        
+
+       
+        <textarea id="css" placeholder="css"  class="css" ></textarea>
+
+      
+        <textarea id="js" placeholder="js" class="js"></textarea>
+        <br><br>
+     
+        <button class="btn btn-warning my-2 my-sm-0 mx-2" type="button"><a href="">Clear</a></button>
+
+        <hr>
+   
+        <h3 style="background: rgb(5, 194, 184); width: 50%; border-radius: 10px;">OutPut</h3>
+
+      
+        <iframe id="code" ></iframe>       
+        
+    </body>
+
+    
+
+    <script>
+
+
+        function compile(){
+        
+        var html=document.getElementById('html');
+        var css=document.getElementById('css');
+        var js=document.getElementById('js');
+        var code=document.getElementById("code").contentWindow.document;
+        
+        document.body.onkeyup =  function(){
+        
+            code.open();
+            code.writeln(
+        
+                html.value + 
+                "<style>"+
+                css.value +
+                "</style>" +
+                "<script>"+
+                js.value 
+                
+                   
+            );
+            code.close();
+        };
+        
+        
+        
+
+      
+compile();
+
+
+
+</script>  
+
+
+
+</html>
+
+
+
+

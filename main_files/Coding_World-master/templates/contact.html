@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+    <body style="overflow:hidden ;">
+      <form method="POST" action="/contact/">
+        {% csrf_token %} 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Code World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/home/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog/">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/course/">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/c/" >C </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cplus/" >C++</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="/java/">Java</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/python/">Python</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/machine/">ML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/sciense/">Data Sciense</a>
+                  </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="/css/">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/js/">JavaScript</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/bootstrap/">Bootstrap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/php/">PHP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/swift/">Swift</a>
+                  </li>
+                
+             
+              </ul>
+              <div class="form-inline my-2 my-lg-0" >
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchbar">
+                <button class="btn btn-outline-warning my-2 my-sm-0 mx-2" type="submit" onclick="search()">Search</button>
+                
+               
+              </div>
+              
+            </div>
+        </nav>
+
+        <form>
+            
+            <div class="row my-5">
+
+                
+            <div class="col-3">
+            
+            
+            </div>
+
+            <div class="col-5">
+                
+            <h3 style="text-align: center;">Contact Us</h3>
+           
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="veera@gmail.com" required name="Email">
+                  <label for="inputEmail4">Message</label>
+                  <textarea cols="75" rows="5"  class="form-control" required placeholder="Write Message Here..." name="message"></textarea>
+                  <button class="btn btn-danger my-2 " type="submit" style="width: 20%;">Submit</button>
+                </form>
+
+              </div>
+
+              <div class="col-3">
+               
+              
+              </div>
+
+           
+            
+        
+            
+        </div>
+          </form>
+
+   
+          
+
+
+<br><br><br><br><br>
+      <div class="row my-5">
+
+          
+   <nav class="navbar navbar-expand-lg navbar-light bg-dark " style="height: 90px; width:100%;">
+
+    <div style="text-align: center;">
+      <p class="mb-0 text-center" style="color: white;">&copy; 2001-2025 CodingWorld.com</p>
+      <p class="mb-0 text-center" style="color: white;">
+        Follow Us On<br> 
+       <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScjcPGbp1efbFP79tFAuvepFdwQI9hnPJ9Nw&usqp=CAU" style="width: 2%; height: 30px;"></img></a>
+       <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="data:image/png;base64,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" style="width: 2%; height: 30px;"></img></a>
+       <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="data:image/png;base64,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" style="width: 2%; height: 30px;"></img></a>
+       <a href="https://www.linkedin.com/in/lokesh-sharma-908857193/"> <img src="data:image/png;base64,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" style="width: 2%; height: 30px;"></img></a>
+      
+      </p>  
+      </div>
+  
+  
+      <div >
+        <form class="form-inline my-2 my-lg-0" >
+          <input class="form-control mr-sm-2" type="text" placeholder="E-mail" id="searchbar">
+          <button class="btn btn-outline-warning my-2 my-sm-0 mx-2" type="submit">Contact Us</button>
+          
+         
+        </div>
+  
+  </nav>  
+
+      </div>
+
+   </body>
+
+</html>

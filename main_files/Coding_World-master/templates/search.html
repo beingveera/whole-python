@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400">
+
+    <title>html</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <script type="text/JavaScript" src="FileSaver.js"></script>
+ <script>
+        var viewMode =getCookie("view-mode");
+        if(viewMode == "desktop"){
+          viewport.setAttribute('content','width=1400'); 
+        }
+        else if (viewMode == "mobile"){
+          viewport.setAttribute('content','width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        }
+      </script>
+
+
+
+
+
+  
+
+
+  </head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Code World</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/course/">Courses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="/c/" >C </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cplus/" >C++</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="/java/">Java</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/python/">Python</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/machine/">ML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sciense/">Data Sciense</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/css/">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/js/">JavaScript</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bootstrap/">Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/php/">PHP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/swift/">Swift</a>
+          </li>
+        
+     
+      </ul>
+      <form class="form-inline my-2 my-lg-0" >
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchbar">
+        <button class="btn btn-outline-warning my-2 my-sm-0 mx-2" type="submit" onclick="search()">Search</button>
+        
+       
+      </form>
+      
+    </div>
+</nav>
+<hr>
+<div class="row">
+
+  <div class="container col-2 md-3"><h5>MorePython Toturial</h5></div>
+  <div class="container col-5 mx-0"><h5>Course Content</h5></div>
+  <div class="container col-3 mx-3"><h5>Write Notes At here</h5></div>
+</div>
+<hr>
+  <div class="row ">
+    <div class="container col-3" style="text-align:left">
+    <ul class="contain" style="overflow: scroll;" id="scrollbar">
+
+    <li class="contain  "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <div style="text-align:center;"><a class="btn btn-primary" data-toggle="collapse" href="#tech-python" role="button" aria-expanded="false" aria-controls="tech-python">Open More</a></div>
+     <br>   
+    
+    <div class="collapse multi-collapse" id="tech-python">
+     
+ 
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li class="contain    "><iframe width="300" height="200" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+
+</div>
+
+  </ul>
+
+</div>
+
+
+<div class="container col-3" style="text-align: center;" id="scrollbar">
+  <ol  class="content-holder">
+  
+ <li class="content-holder-item" id="first"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>1.Introduction to Python </h6></a></li>
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>2. Installation in windows </h6></a></li> 
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>3. installation in linux </h6></a></li> 
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>4. introducing IDLE </h6></a></li>
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>5. Installing PyCharm </h6></a></li> 
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>6. strings, variables and comments</h6></a></li>
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>7. Taking input, escaping characters in Python</h6></a></li> 
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>8. Variables, Arithmetic operators in Python</h6></a></li>
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>9. Operator precedence</h6></a></li> 
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>10. Strings in Python </h6></a></li>
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>11. formatting strings in Python </h6></a></li> 
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>12. Control Structures - Indentation</h6></a></li>
+
+<div style="text-align:center;"><a class="btn btn-primary" data-toggle="collapse" href="#tech-python" role="button" aria-expanded="false" aria-controls="tech-python">Open More</a></div>
+
+
+<div class="collapse multi-collapse" id="tech-python">
+
+
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>13. Control Structures - if, else in Python </h6></a></li> 
+<li class="content-holder-item"><a href="https://www.youtube.com/embed/QVogRV1Cw68"><h6>14. Control Structures -if else - part 2  </h6></a></li>
+
+</div>
+  </ol>
+</div>
+
+
+<div class="container col-6">
+  <iframe id="start" width="750" height="500" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <textarea style=" border-width: 5px; border-color: tomato;" id="myText" rows="4" cols="100"></textarea>
+  <button class="btn btn-danger"  id="button">Click to Save</button>
+</div>
+
+
+
+</div>
+
+
+
+  
+<script>
+  var button=document.getElementById('button')
+ button.addEventListener('click',function(){
+   var textareaVal=document.getElementById("myText").value 
+   var filename="codeWorld.txt"
+   download(textareaVal,filename)
+ })
+
+function download(textareaVal,filename){
+
+  var element=document.createElement('a')
+
+  element.setAttribute('href','data:text/plain;charset=utf-8,' + encodeURIComponent(textareaVal))
+
+  element.setAttribute('download',filename)
+
+  element.style.display="none";
+
+  document.body.appendChild(element)
+
+  element.click()
+
+  document.body.removeChild(element)
+}
+
+</script>
+
+
+<script>
+
+var first=document.getElementById('first')
+ first.addEventListener('click',function(){
+  <iframe width="750" height="500" src="https://www.youtube.com/embed/QVogRV1Cw68" frameborder="1" ></iframe>
+
+  
+
+
+   
+ }
+</script>
+
+
+</body>
+
+      
+<style>
+
+li{
+  color: white;
+}
+
+  .content-holder {
+      list-style: none;
+      padding:0;
+  }
+
+
+  .content-holder a {
+      color: black;
+      text-decoration: none;
+  }
+
+  .content-holder li:hover {
+      background-color: rgb(239, 239, 240)
+  }
+
+  .content-holder-item {
+      padding: 15px 10px;
+      font-size: 16px;
+  }
+
+  
+ 
+
+  #scrollbar {
+      max-height: 85vh;
+      overflow-y: scroll;
+
+  }
+
+  
+</style>
+
+
+</html>

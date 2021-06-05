@@ -1,0 +1,21 @@
+2021-01-13 18:27:44,080 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-01-13 18:27:44,082 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from C:\Users\techno\AppData\Local\Programs\Python\Python39\lib\site-packages\instabot\bot\bot.py
+2021-01-13 18:27:48,688 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2021-01-13 18:27:48,689 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2021-01-13 18:27:48,690 - instabot version: 0.117.0 (api_login) - INFO - Recovery from C:\Users\techno\Desktop\python\open cv/config/_itsmeveera__uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=34a30c04-ab0a-400d-883e-9f49d48b1725
+- uuid=63266eaf-4bf9-426e-95dd-3b86403869be
+- client_session_id=a21f7ff7-acf0-4b90-9a72-da81bb9eb0a1
+- device_id=android-9caf32ae217f32b7
+2021-01-13 18:27:48,692 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2021-01-13 18:27:57,644 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2021-01-13 18:27:58,723 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2021-01-13 18:27:58,729 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as '_itsmeveera_'!
+2021-01-13 18:27:58,730 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: C:\Users\techno\Desktop\python\open cv/config/_itsmeveera_.checkpoint
+2021-01-13 18:27:59,657 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: feed/user/10734179532/?max_id=&min_timestamp=None&rank_token=10734179532_63266eaf-4bf9-426e-95dd-3b86403869be&ranked_content=true returned response: <Response [200]>
+2021-01-13 18:28:00,616 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2149601429516666249_10734179532/likers/? returned response: <Response [200]>
+2021-01-13 18:28:01,445 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/2042652544997425243_10734179532/likers/? returned response: <Response [200]>
+2021-01-13 18:28:02,363 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/10734179532/info/ returned response: <Response [200]>
+2021-01-13 18:28:02,388 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: C:\Users\techno\Desktop\python\open cv/config/_itsmeveera_.checkpoint
+2021-01-13 18:28:02,393 - instabot version: 0.117.0 (bot) - INFO - Total requests: 39

@@ -1,0 +1,27 @@
+EMOJI_ALIAS_UNICODE
+EMOJI_UNICODE
+UNICODE_EMOJI
+UNICODE_EMOJI_ALIAS
+__author__
+__builtins__
+__cached__
+__doc__
+__email__
+__file__
+__license__
+__loader__
+__name__
+__package__
+__path__
+__source__
+__spec__
+__version__
+core
+demojize
+emoji_count
+emoji_lis
+emojize
+get_emoji_regexp
+unicode_codes
+
+[Program finished]
